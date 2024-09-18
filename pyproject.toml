@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyvolt"
+version = "0.2"
+description = "State Estimation"
+authors = [
+    {name = "Marco Pau", email = "acs-software@eonerc.rwth-aachen.de"},
+    {name = "Markus Mirz", email = "acs-software@eonerc.rwth-aachen.de"},
+    {name = "Jan Dinkelbach", email = "acs-software@eonerc.rwth-aachen.de"}
+]
+dependencies = [
+    "numpy==2.0.0",
+    "pandas==2.2.2",
+    "cimpy==1.0.2"
+]
+
+[tool.setuptools]
+packages = ["pyvolt"]

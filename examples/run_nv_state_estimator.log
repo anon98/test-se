@@ -1,0 +1,83 @@
+INFO:cimpy.cimimport:START of parsing file "/app/examples/sample_data/areti/1.xml"
+INFO:cimpy.cimimport:START of parsing file "/app/examples/sample_data/areti/2.xml"
+INFO:cimpy.cimimport:START of parsing file "/app/examples/sample_data/areti/3.xml"
+INFO:cimpy.cimimport:END of parsing file "/app/examples/sample_data/areti/1.xml"
+INFO:cimpy.cimimport:END of parsing file "/app/examples/sample_data/areti/2.xml"
+INFO:cimpy.cimimport:END of parsing file "/app/examples/sample_data/areti/3.xml"
+WARNING:cimpy.cimimport:Package information not found for class type : 1222 times
+WARNING:cimpy.cimimport:Package information not found for class Terminal, attribute ConductingEquipment : 436 times
+WARNING:cimpy.cimimport:'Terminal' has not attribute 'ConnectivityNode' : 436 times
+WARNING:cimpy.cimimport:Package information not found for class Terminal, attribute name : 436 times
+WARNING:cimpy.cimimport:Package information not found for class Terminal, attribute connected : 436 times
+WARNING:cimpy.cimimport:Package information not found for class Terminal, attribute sequenceNumber : 436 times
+WARNING:cimpy.cimimport:Referenced Terminal [PhaseCode.ABC] object missing. : 436 times
+WARNING:cimpy.cimimport:'ConnectivityNode' has not attribute 'name' : 163 times
+WARNING:cimpy.cimimport:'ConnectivityNode' has not attribute 'ConnectivityNodeContainer' : 163 times
+WARNING:cimpy.cimimport:Package information not found for class Disconnector, attribute name : 112 times
+WARNING:cimpy.cimimport:Package information not found for class Disconnector, attribute BaseVoltage : 112 times
+WARNING:cimpy.cimimport:Package information not found for class Disconnector, attribute EquipmentContainer : 112 times
+WARNING:cimpy.cimimport:Package information not found for class Disconnector, attribute normalOpen : 112 times
+WARNING:cimpy.cimimport:Package information not found for class EnergyConsumer, attribute name : 52 times
+WARNING:cimpy.cimimport:Package information not found for class EnergyConsumer, attribute EquipmentContainer : 52 times
+WARNING:cimpy.cimimport:Package information not found for class EnergyConsumer, attribute aggregate : 52 times
+WARNING:cimpy.cimimport:'EnergyConsumer' has not attribute 'pfixed' : 52 times
+WARNING:cimpy.cimimport:'EnergyConsumer' has not attribute 'qfixed' : 52 times
+WARNING:cimpy.cimimport:Package information not found for class Terminal, attribute TopologicalNode : 224 times
+WARNING:cimpy.cimimport:Package information not found for class SvVoltage, attribute v : 57 times
+WARNING:cimpy.cimimport:Package information not found for class SvVoltage, attribute angle : 57 times
+WARNING:cimpy.cimimport:Package information not found for class SvVoltage, attribute TopologicalNode : 57 times
+WARNING:cimpy.cimimport:Package information not found for class Substation, attribute name : 57 times
+WARNING:cimpy.cimimport:Package information not found for class Substation, attribute Region : 57 times
+WARNING:cimpy.cimimport:Package information not found for class TopologicalNode, attribute name : 57 times
+WARNING:cimpy.cimimport:Package information not found for class TopologicalNode, attribute ConnectivityNodeContainer : 57 times
+WARNING:cimpy.cimimport:Package information not found for class TopologicalNode, attribute TopologicalIsland : 57 times
+WARNING:cimpy.cimimport:Package information not found for class TopologicalNode, attribute BaseVoltage : 57 times
+WARNING:cimpy.cimimport:Package information not found for class SvPowerFlow, attribute p : 52 times
+WARNING:cimpy.cimimport:Package information not found for class SvPowerFlow, attribute q : 52 times
+WARNING:cimpy.cimimport:Package information not found for class SvPowerFlow, attribute Terminal : 52 times
+WARNING:cimpy.cimimport:Package information not found for class VoltageLevel, attribute BaseVoltage : 58 times
+WARNING:cimpy.cimimport:Package information not found for class VoltageLevel, attribute name : 58 times
+WARNING:cimpy.cimimport:Package information not found for class VoltageLevel, attribute Substation : 58 times
+WARNING:cimpy.cimimport:Package information not found for class ACLineSegment, attribute name : 54 times
+WARNING:cimpy.cimimport:Package information not found for class ACLineSegment, attribute x : 54 times
+WARNING:cimpy.cimimport:Package information not found for class ACLineSegment, attribute r : 54 times
+WARNING:cimpy.cimimport:Package information not found for class ACLineSegment, attribute gch : 54 times
+WARNING:cimpy.cimimport:Package information not found for class ACLineSegment, attribute bch : 54 times
+WARNING:cimpy.cimimport:Package information not found for class ACLineSegment, attribute length : 54 times
+WARNING:cimpy.cimimport:Package information not found for class ACLineSegment, attribute BaseVoltage : 54 times
+WARNING:cimpy.cimimport:Package information not found for class ACLineSegment, attribute aggregate : 54 times
+WARNING:cimpy.cimimport:Package information not found for class ACLineSegment, attribute EquipmentContainer : 54 times
+WARNING:cimpy.cimimport:Package information not found for class BusbarSection, attribute name : 55 times
+WARNING:cimpy.cimimport:Package information not found for class BusbarSection, attribute EquipmentContainer : 55 times
+WARNING:cimpy.cimimport:Package information not found for class BusbarSection, attribute BaseVoltage : 55 times
+WARNING:cimpy.cimimport:Package information not found for class Line, attribute name : 54 times
+WARNING:cimpy.cimimport:Package information not found for class Line, attribute Region : 54 times
+WARNING:cimpy.cimimport:Package information not found for class SubGeographicalRegion, attribute name : 3 times
+WARNING:cimpy.cimimport:Package information not found for class SubGeographicalRegion, attribute Region : 3 times
+WARNING:cimpy.cimimport:Package information not found for class TopologicalIsland, attribute name : 3 times
+WARNING:cimpy.cimimport:Package information not found for class ExternalNetworkInjection, attribute aggregate : 3 times
+WARNING:cimpy.cimimport:Package information not found for class ExternalNetworkInjection, attribute name : 3 times
+WARNING:cimpy.cimimport:Package information not found for class ExternalNetworkInjection, attribute EquipmentContainer : 3 times
+WARNING:cimpy.cimimport:Package information not found for class BaseVoltage, attribute nominalVoltage : 3 times
+WARNING:cimpy.cimimport:Package information not found for class BaseVoltage, attribute name : 3 times
+WARNING:cimpy.cimimport:Package information not found for class GeographicalRegion, attribute name : 3 times
+INFO:cimpy.cimimport:CIM object Terminal created : 436 times
+INFO:cimpy.cimimport:CIM object ConnectivityNode created : 163 times
+INFO:cimpy.cimimport:CIM object Disconnector created : 112 times
+INFO:cimpy.cimimport:CIM object EnergyConsumer created : 52 times
+INFO:cimpy.cimimport:CIM object SvVoltage created : 57 times
+INFO:cimpy.cimimport:CIM object Substation created : 57 times
+INFO:cimpy.cimimport:CIM object TopologicalNode created : 57 times
+INFO:cimpy.cimimport:CIM object SvPowerFlow created : 52 times
+INFO:cimpy.cimimport:CIM object VoltageLevel created : 58 times
+INFO:cimpy.cimimport:CIM object ACLineSegment created : 54 times
+INFO:cimpy.cimimport:CIM object BusbarSection created : 55 times
+INFO:cimpy.cimimport:CIM object Line created : 54 times
+INFO:cimpy.cimimport:CIM object SubGeographicalRegion created : 3 times
+INFO:cimpy.cimimport:CIM object TopologicalIsland created : 3 times
+INFO:cimpy.cimimport:CIM object ExternalNetworkInjection created : 3 times
+INFO:cimpy.cimimport:CIM object BaseVoltage created : 3 times
+INFO:cimpy.cimimport:CIM object GeographicalRegion created : 3 times
+INFO:cimpy.cimimport:Created totally 1207 CIM objects in 0.08639144897460938s
+
+
