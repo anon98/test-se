@@ -17,5 +17,6 @@
 3. **Example Usage:**
 
     ```bash
+    cd examples
     python3 quickstart/run_nv_state_estimator.py
     ```
