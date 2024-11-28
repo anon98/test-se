@@ -78,6 +78,6 @@ INFO:cimpy.cimimport:CIM object TopologicalIsland created : 3 times
 INFO:cimpy.cimimport:CIM object ExternalNetworkInjection created : 3 times
 INFO:cimpy.cimimport:CIM object BaseVoltage created : 3 times
 INFO:cimpy.cimimport:CIM object GeographicalRegion created : 3 times
-INFO:cimpy.cimimport:Created totally 1207 CIM objects in 0.08639144897460938s
+INFO:cimpy.cimimport:Created totally 1207 CIM objects in 0.06669855117797852s
 
 

@@ -1,0 +1,94 @@
+version: '3.8'
+
+services:
+  pyvolt-app:
+    build:
+      context: ./pyvolt-app  # Path to pyvolt-app Dockerfile
+      dockerfile: Dockerfile
+    container_name: pyvolt-container
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./pyvolt-app/examples:/app/examples
+    environment:
+      MQTT_BROKER: mosquitto
+      MQTT_PORT: 1883
+      MQTT_TOPIC: state_estimation/results
+    networks:
+      - app-network
+    restart: always
+
+  subscriber:
+    build:
+      context: ./subscriber  # Path to subscriber Dockerfile
+    container_name: subscriber
+    environment:
+      MQTT_BROKER: mosquitto
+      MQTT_PORT: 1883
+      MQTT_TOPIC: state_estimation/results
+      MONGO_URL: mongodb://root:example@mongo:27017
+    networks:
+      - app-network
+    restart: always
+
+  mosquitto:
+    image: eclipse-mosquitto
+    container_name: mosquitto
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      - ./mqtt_config/mosquitto.conf:/mosquitto/config/mosquitto.conf
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  mongo:
+    image: mongo:6
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+      - mongo_config:/data/configdb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  mongo-express:
+    image: mongo-express
+    container_name: mongo-express
+    ports:
+      - "8081:8081"  # Mongo Express UI for MongoDB
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: example
+      ME_CONFIG_MONGODB_SERVER: mongo
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  portainer:
+    image: portainer/portainer-ce
+    container_name: portainer
+    ports:
+      - "9000:9000"  # Portainer Web UI
+      - "9443:9443"  # Optional secure access
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock  # Allow Portainer to manage Docker
+      - portainer_data:/data  # Persistent storage for Portainer
+    networks:
+      - app-network
+    restart: unless-stopped
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  mongo_data:
+  mongo_config:
+  portainer_data:  # Persistent volume for Portainer data
